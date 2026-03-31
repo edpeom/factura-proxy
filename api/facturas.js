@@ -51,9 +51,7 @@ function downloadFile(targetUrl) {
       }
 
       if (response.statusCode !== 200) {
-        return reject(
-          new Error(`Upstream status ${response.statusCode}`)
-        );
+        return reject(new Error(`Upstream status ${response.statusCode}`));
       }
 
       const chunks = [];
